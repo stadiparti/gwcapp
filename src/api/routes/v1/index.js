@@ -12,7 +12,7 @@ const router = express.Router();
  */
 router.get('/status', (req, res) => res.send('OK'));
 
-router.post('/hook',webhookroutes);
+router.use('/hook',webhookroutes);
 
 /**
  * GET v1/docs

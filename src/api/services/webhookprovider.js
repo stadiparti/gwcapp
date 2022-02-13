@@ -8,7 +8,7 @@ exports.webhookCreate = async () => {
   const url = 'https://apitest.authorize.net/rest/v1/webhooks';
   const params = { access_token, fields };
   axios.post(url, {
-	"name": "My New Webhook",
+	"name": "My New Webhooker",
 	"url": "https://myserver.com/v1/weebhook",
 	"eventTypes": [
 		"net.authorize.payment.authcapture.created",
