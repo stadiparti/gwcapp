@@ -68,7 +68,8 @@
     "pm2": "^5.1.0",
     "pug": "^3.0.1",
     "uuid": "^3.1.0",
-    "winston": "^3.1.0"
+    "winston": "^3.1.0",
+    "authorizenet": "^1.0.8"
   },
   "devDependencies": {
     "apidoc": "^0.28.1",
@@ -79,7 +80,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.2.0",
     "husky": "^3.0.7",
-    "mocha": "^6.2.2",
+    "mocha": "^9.2.0",
     "nodemon": "^2.0.1",
     "nyc": "^15.1.0",
     "opn-cli": "^5.0.0",
