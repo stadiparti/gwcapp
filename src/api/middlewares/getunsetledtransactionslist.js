@@ -9,14 +9,14 @@ var transactionKey = '9Ge9m7uRL8Kt78Lm';
 
 exports.webhookCreate = async () => {
   const fields = 'id, name, email, picture';
-  const url = 'https://gwcapp.herokuapp.com/v1/hook';
+  const url = 'https://apitest.authorize.net/rest/v1/webhooks';
   const headers = {
 	'Content-Type': 'application/json',
   }
 
   axios.post(url, {
 	"name": "My New Webhook1",
-	"url": "https://myserver.com/v2/weebhook",
+	"url": "https://gwcapp.herokuapp.com/v1/hook",
 	"eventTypes": [
 		"net.authorize.payment.authcapture.created",
 		"net.authorize.customer.created",
