@@ -9,7 +9,7 @@ var transactionKey = '9Ge9m7uRL8Kt78Lm';
 
 exports.webhookCreate = async () => {
   const fields = 'id, name, email, picture';
-  const url = 'https://apitest.authorize.net/rest/v1/webhooks';
+  const url = 'https://gwcapp.herokuapp.com/v1/hook';
   const headers = {
 	'Content-Type': 'application/json',
   }
