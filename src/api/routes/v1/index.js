@@ -2,6 +2,7 @@ const express = require('express');
 const userRoutes = require('./user.route');
 const authRoutes = require('./auth.route');
 const transactionroutes = require('./transactions.route');
+const webhookroutes = require('./webhook.route');
 
 
 const router = express.Router();
@@ -11,7 +12,8 @@ const router = express.Router();
  */
 router.get('/status', (req, res) => res.send('OK'));
 
-router.post("/hook", (req, res) => {
+router.post('/hook/:userId', (req, res) => {
+    console.log("locals"+req.locals)
     console.log(req.body) // Call your action on the request here
     res.status(200).end() // Responding is important
   })
